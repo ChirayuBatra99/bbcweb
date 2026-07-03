@@ -1,0 +1,68 @@
+:root {
+  /* Brand — Yellow & Blue */
+  --color-blue-950: #0a1628;
+  --color-blue-900: #0f2744;
+  --color-blue-800: #1a3a6b;
+  --color-blue-700: #1e4d8c;
+  --color-blue-600: #2563b8;
+  --color-blue-500: #3b82f6;
+  --color-blue-400: #60a5fa;
+  --color-blue-100: #dbeafe;
+  --color-blue-50: #eff6ff;
+
+  --color-yellow-600: #d97706;
+  --color-yellow-500: #f59e0b;
+  --color-yellow-400: #fbbf24;
+  --color-yellow-300: #fcd34d;
+  --color-yellow-200: #fde68a;
+  --color-yellow-100: #fef3c7;
+  --color-yellow-50: #fffbeb;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-400: #94a3b8;
+  --color-gray-600: #475569;
+  --color-gray-800: #1e293b;
+
+  /* Semantic */
+  --color-primary: var(--color-blue-800);
+  --color-primary-light: var(--color-blue-600);
+  --color-accent: var(--color-yellow-400);
+  --color-accent-dark: var(--color-yellow-600);
+  --color-bg: var(--color-white);
+  --color-bg-alt: var(--color-blue-50);
+  --color-text: var(--color-gray-800);
+  --color-text-muted: var(--color-gray-600);
+  --color-text-inverse: var(--color-white);
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+  --container-max: 1200px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+
+  /* Effects */
+  --shadow-sm: 0 2px 8px rgba(15, 39, 68, 0.06);
+  --shadow-md: 0 8px 30px rgba(15, 39, 68, 0.1);
+  --shadow-lg: 0 20px 60px rgba(15, 39, 68, 0.15);
+  --shadow-glow-yellow: 0 0 40px rgba(251, 191, 36, 0.35);
+  --shadow-glow-blue: 0 0 40px rgba(37, 99, 184, 0.25);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --header-motto-height: 38px;
+  --header-height: 80px;
+  --header-total-height: calc(var(--header-motto-height) + var(--header-height));
+}

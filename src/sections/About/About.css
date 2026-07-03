@@ -1,0 +1,135 @@
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.about__visual {
+  position: relative;
+}
+
+.about__image-main {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.about__image-main .lazy-image {
+  aspect-ratio: 6/5;
+}
+
+.about__image-accent {
+  position: absolute;
+  bottom: -2rem;
+  right: -1.5rem;
+  width: 55%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 4px solid var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.about__image-accent .lazy-image {
+  aspect-ratio: 7/5;
+}
+
+.about__experience-badge {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(135deg, var(--color-yellow-400), var(--color-yellow-500));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow-yellow);
+  text-align: center;
+  line-height: 1.1;
+}
+
+.about__experience-num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-blue-900);
+}
+
+.about__experience-text {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-blue-800);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about__heading {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: var(--color-blue-900);
+  margin-bottom: 1rem;
+}
+
+.about__content p {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.about__highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.about__highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--color-blue-800);
+  font-weight: 500;
+}
+
+.about__highlights svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--color-yellow-500);
+  margin-top: 2px;
+}
+
+.about__deco {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--color-yellow-100) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__visual {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .about__highlights {
+    grid-template-columns: 1fr;
+  }
+}
